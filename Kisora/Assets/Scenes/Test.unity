@@ -200,17 +200,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &276637401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 276637397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec1708bf320754010a77a9d539397845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &276637402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,7 +224,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 468890, guid: 81aeab76db959cd478ea1cf4d6d8c68b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 468890, guid: 81aeab76db959cd478ea1cf4d6d8c68b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -281,7 +270,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 463472, guid: 7dc923b4c4812f147ba42a507e5507bd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 463472, guid: 7dc923b4c4812f147ba42a507e5507bd, type: 2}
       propertyPath: m_LocalPosition.y
