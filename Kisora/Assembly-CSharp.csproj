@@ -59,8 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SapphiArt\SapphiArtchan\Scripts\AnimationManagerUI.cs" />
-    <Compile Include="Assets\SapphiArt\SapphiArtchan\Scripts\SapphiArtChan_AnimManager.cs" />
+    <Compile Include="Assets\Scripts\KisoraAction.cs" />
     <Compile Include="Assets\Scripts\ZombieAction.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/semler/Game/Kisora/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

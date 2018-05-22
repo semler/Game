@@ -35,7 +35,7 @@ public class ZombieAction : MonoBehaviour
         stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         kisoraDestination = new Vector3(kisora.transform.position.x, kisora.transform.position.y, kisora.transform.position.z);
 
-        if (Vector3.Distance(kisoraDestination, transform.position) > 5) {
+        if (Vector3.Distance(kisoraDestination, transform.position) > 50) {
             animator.SetBool("isAttack", false);
 
             if (Vector3.Distance(randDestination, transform.position) < 0.5) {
@@ -54,9 +54,9 @@ public class ZombieAction : MonoBehaviour
 
                 Walk(randDestination, 0.5f);
             }
-        } else if (Vector3.Distance(kisoraDestination, transform.position) < 1.5) {
+        } else if (Vector3.Distance(kisoraDestination, transform.position) < 1) {
             animator.SetBool("isWalk", false);
-            animator.SetBool("isAttack", true);
+            Attack();
 
             direction = (kisoraDestination - transform.position).normalized;
             transform.LookAt(new Vector3(kisoraDestination.x, transform.position.y, kisoraDestination.z));
@@ -86,5 +86,23 @@ public class ZombieAction : MonoBehaviour
         Vector3 random = Random.insideUnitCircle * 10;
         Debug.Log(random);
         return transform.position + new Vector3(random.x, 0, random.y);
+    }
+
+
+
+    private void Attack()
+    {
+        animator.SetBool("isAttack", true);
+
+        kisora.SendMessage("Damage", animator.gameObject.name);
+    }
+
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        //if (hit.gameObject.name.Equals("Kisora"))
+        //{
+        //    Debug.Log(Vector3.Distance(kisoraDestination, transform.position));
+        //}
     }
 }
