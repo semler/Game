@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{EC41A159-BC15-45A2-141B-EC7E6CCB8E56}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/KisoraAction.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/VictorsAssets/TouchControlsKit-Lite/Scripts/Runtime/Controllers/TCKJoystick.cs">
     <Files>
-      <File FileName="Assets/Scripts/ZombieAction.cs" Line="91" Column="1" />
-      <File FileName="Assets/Scripts/KisoraAction.cs" Line="5" Column="20" />
+      <File FileName="Assets/Scripts/ZombieAction.cs" Line="71" Column="42" />
+      <File FileName="Assets/Scripts/KisoraAction.cs" Line="65" Column="41" />
+      <File FileName="Assets/Scripts/ControlKitManager.cs" Line="16" Column="36" />
+      <File FileName="Assets/VictorsAssets/TouchControlsKit-Lite/Scripts/Runtime/Controllers/TCKJoystick.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

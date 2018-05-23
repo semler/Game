@@ -54,7 +54,7 @@ public class ZombieAction : MonoBehaviour
 
                 Walk(randDestination, 0.5f);
             }
-        } else if (Vector3.Distance(kisoraDestination, transform.position) < 1) {
+        } else if (Vector3.Distance(kisoraDestination, transform.position) < 1.5) {
             animator.SetBool("isWalk", false);
             Attack();
 

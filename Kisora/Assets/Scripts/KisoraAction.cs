@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KisoraAction : MonoBehaviour
 {
-    static int hp = 10;
+    static int hp = 1000;
 
     private CharacterController controller;
     private Animator animator;
@@ -38,7 +38,7 @@ public class KisoraAction : MonoBehaviour
     {
         if (hp == 0)
         {
-            //Dead("self");
+            Dead("self");
         } else {
             animator.SetBool("isDamage", true);
             hp--;
@@ -50,6 +50,20 @@ public class KisoraAction : MonoBehaviour
         animator.SetBool("isDead", true);
     }
 
+    private void Attack(string name)
+    {
+        animator.SetBool("isAttack", true);
+    }
+
+    private void Jump(string name)
+    {
+        animator.SetBool("isJump", true);
+    }
+
+    private void Run(string name)
+    {
+        animator.SetBool("isRun", true);
+    }
 
 
     void OnControllerColliderHit(ControllerColliderHit hit)
